@@ -7,7 +7,7 @@ d3.squareMap = {
     colorNumber: 6, // The number of steps in the ColorBrewer scale
     labels: true, // Whether or not the map has labels
     labelTypeface: 'sans-serif', // Font of the labels
-    labelStyle: 'abbr', // Kind of labels (e.g. CT vs. Conn.)
+    labelStyle: 'ap', // Kind of labels (e.g. CT vs. Conn.)
     labelColor: 'white', // Color of labels
     data: [], // Will contain our data for later analysis
     scale: d3.scale.quantize(), // An empty d3 quantize scale to make our choropleth
