@@ -1,0 +1,1 @@
+d3.squareMap.render("data/test.csv","#vis");

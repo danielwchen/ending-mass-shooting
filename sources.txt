@@ -1,0 +1,16 @@
+Data:
+Guns per capita:
+http://reverbpress.com/politics/firearms-per-capita-by-state/
+Gun death per capita:
+https://www.cdc.gov/nchs/pressroom/sosmap/firearm_mortality/firearm.htm
+Mother Jones mass shootings tracker:
+http://www.motherjones.com/politics/2012/12/mass-shootings-mother-jones-full-data/
+FBI 2013 study:
+https://www.fbi.gov/file-repository/active-shooter-study-2000-2013-1.pdf/view
+
+
+
+
+
+Code:
+https://github.com/charliesmart/d3-square-tile-map
