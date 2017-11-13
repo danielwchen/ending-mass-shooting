@@ -10,7 +10,7 @@ d3.squareMap = {
     labelStyle: 'ap', // Kind of labels (e.g. CT vs. Conn.)
     labelColor: 'white', // Color of labels
     data: [], // Will contain our data for later analysis
-    scale: d3.scale.quantize(), // An empty d3 quantize scale to make our choropleth
+    scale: d3.scaleQuantize(), // An empty d3 quantize scale to make our choropleth
     // This is the 'geographic' and label data for the states
     states: {
         "AK": { // Which state
