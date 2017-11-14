@@ -117,7 +117,7 @@ d3.squareMap = {
             "full": "Hawaii",
             "ap": "Hawaii",
             "x": 72,
-            "y": 504,
+            "y": 432,
             "w": 66,
             "h": 66
         },
