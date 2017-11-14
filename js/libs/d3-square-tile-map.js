@@ -76,15 +76,15 @@ d3.squareMap = {
             "w": 66,
             "h": 66
         },
-        "DC": {
-            "abbr": "DC",
-            "full": "Washington, D.C.",
-            "ap": "D.C.",
-            "x": 648,
-            "y": 360,
-            "w": 66,
-            "h": 66
-        },
+        // "DC": {
+        //     "abbr": "DC",
+        //     "full": "Washington, D.C.",
+        //     "ap": "D.C.",
+        //     "x": 648,
+        //     "y": 360,
+        //     "w": 66,
+        //     "h": 66
+        // },
         "DE": {
             "abbr": "DE",
             "full": "Delaware",
