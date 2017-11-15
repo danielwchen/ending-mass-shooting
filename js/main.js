@@ -1,8 +1,9 @@
-var map1 = d3.squareMap.setAttr({
-    labelStyle: 'abbr',
-    colorNumber: 4
-}).render("data/gunspercapita.csv","#vis1");
+
 var map2 = d3.squareMap.setAttr({
     labelStyle: 'abbr',
-    colorNumber: 4
+    colorNumber: 6
 }).render("data/gundeathspercapita.csv","#vis2");
+var map1 = d3.squareMap.setAttr({
+    labelStyle: 'abbr',
+    colorNumber: 6
+}).render("data/gunspercapita.csv","#vis1");
