@@ -638,14 +638,14 @@ d3.squareMap = {
         // Set the range
         this.scale.range(colorbrewer[palette][number]);
     },
-    Method to update the scale domain
-    updateScaleDomain: function() {
-        // Get the min and max form the user's data
-        var min = d3.min(this.data);
-        var max = d3.max(this.data);
-        // Set the scale domain
-        this.scale.domain([min, max]);
-    }, 
+    // Method to update the scale domain
+    // updateScaleDomain: function() {
+    //     // Get the min and max form the user's data
+    //     var min = d3.min(this.data);
+    //     var max = d3.max(this.data);
+    //     // Set the scale domain
+    //     this.scale.domain([min, max]);
+    // }, 
     onClick: function(userFunction) {
         this.map.onclick = userFunction;
     },
