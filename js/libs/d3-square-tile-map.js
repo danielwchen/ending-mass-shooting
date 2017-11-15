@@ -5,7 +5,7 @@ d3.squareMap = {
     // Default properties of the map
     width: null, // Width
     colorSet: 'Reds', // The ColorBrewer set to use
-    colorNumber: 6, // The number of steps in the ColorBrewer scale
+    colorNumber: 5, // The number of steps in the ColorBrewer scale
     labels: true, // Whether or not the map has labels
     labelTypeface: 'sans-serif', // Font of the labels
     labelStyle: 'ap', // Kind of labels (e.g. CT vs. Conn.)
@@ -501,7 +501,7 @@ d3.squareMap = {
             "h": 20
         },
         "4": {
-            "abbr": "0-10",
+            "abbr": "<10",
             "full": "Wyoming",
             "ap": "Wyo.",
             "x": 681,
