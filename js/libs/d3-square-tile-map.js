@@ -607,7 +607,9 @@ d3.squareMap = {
         });
     },
     addTitle: function(svg) {
-        svg.append('text').text(this.heading)
+        svg.append('text')
+        .text(this.heading)
+        .attr('class', 'maptitle')
         .attr('x', this.width/2)
         .attr('y', 33)
         .attr('text-anchor', 'middle')

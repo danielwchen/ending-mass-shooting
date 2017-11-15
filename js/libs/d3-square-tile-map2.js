@@ -1,7 +1,7 @@
 // Modified from https://github.com/charliesmart/d3-square-tile-map
 // Hard coded in scale and legend
 // Everything for our module is contained in a object as a property of d3
-d3.squareMap = {
+d3.squareMap2 = {
     // Default properties of the map
     width: null, // Width
     colorSet: 'Reds', // The ColorBrewer set to use
@@ -607,7 +607,9 @@ d3.squareMap = {
         });
     },
     addTitle: function(svg) {
-        svg.append('text').text(this.heading)
+        svg.append('text')
+        .text(this.heading)
+        .attr('class', 'maptitle')
         .attr('x', this.width/2)
         .attr('y', 33)
         .attr('text-anchor', 'middle')
