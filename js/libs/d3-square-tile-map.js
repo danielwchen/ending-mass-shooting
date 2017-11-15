@@ -74,7 +74,7 @@ d3.squareMap = {
             "abbr": "CT",
             "full": "Connecticut",
             "ap": "Conn.",
-            "x": 648,
+            "x": 720,
             "y": 216,
             "w": 66,
             "h": 66
@@ -101,7 +101,7 @@ d3.squareMap = {
             "abbr": "FL",
             "full": "Florida",
             "ap": "Fla.",
-            "x": 576,
+            "x": 648,
             "y": 504,
             "w": 66,
             "h": 66
@@ -120,7 +120,7 @@ d3.squareMap = {
             "full": "Hawaii",
             "ap": "Hawaii",
             "x": 72,
-            "y": 432,
+            "y": 504,
             "w": 66,
             "h": 66
         },
@@ -300,7 +300,7 @@ d3.squareMap = {
             "full": "New Jersey",
             "ap": "N.J.",
             "x": 648,
-            "y": 144,
+            "y": 216,
             "w": 66,
             "h": 66
         },
@@ -326,7 +326,7 @@ d3.squareMap = {
             "abbr": "NY",
             "full": "New York",
             "ap": "N.Y.",
-            "x": 576,
+            "x": 648,
             "y": 144,
             "w": 66,
             "h": 66
@@ -371,7 +371,7 @@ d3.squareMap = {
             "abbr": "RI",
             "full": "Rhode Island",
             "ap": "R.I.",
-            "x": 720,
+            "x": 792.8,
             "y": 216,
             "w": 66,
             "h": 66
@@ -619,7 +619,7 @@ d3.squareMap = {
         svg.append('text').text(this.heading)
         .attr('x', this.width/2)
         .attr('y', 33)
-        .attr('text-anchor', 'middle');
+        .attr('text-anchor', 'middle')
         .attr('alignment-baseline', 'middle');
     }
     // Setter method to allow the user to set properties. Takes an object of properties as its argument.
