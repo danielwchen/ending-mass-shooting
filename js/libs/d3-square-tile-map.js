@@ -5,14 +5,15 @@ d3.squareMap = {
     // Default properties of the map
     width: null, // Width
     colorSet: 'Reds', // The ColorBrewer set to use
-    colorNumber: 5, // The number of steps in the ColorBrewer scale
+    colorNumber: 4, // The number of steps in the ColorBrewer scale
     labels: true, // Whether or not the map has labels
     labelTypeface: 'sans-serif', // Font of the labels
-    labelStyle: 'ap', // Kind of labels (e.g. CT vs. Conn.)
+    labelStyle: 'abbr', // Kind of labels (e.g. CT vs. Conn.)
     labelColor: 'white', // Color of labels
     data: [], // Will contain our data for later analysis
-    scale: d3.scaleQuantize(), // An empty d3 quantize scale to make our choropleth
+    scale: d3.scaleThreshold().domain([10,20,100]);, // An empty d3 quantize scale to make our choropleth
     legend: null,
+    heading: "Firearms per 1,000 people"
     // This is the 'geographic' and label data for the states
     states: {
         "AK": { // Which state
@@ -78,15 +79,15 @@ d3.squareMap = {
             "w": 66,
             "h": 66
         },
-        // "DC": {
-        //     "abbr": "DC",
-        //     "full": "Washington, D.C.",
-        //     "ap": "D.C.",
-        //     "x": 648,
-        //     "y": 360,
-        //     "w": 66,
-        //     "h": 66
-        // },
+        "DC": {
+            "abbr": "DC",
+            "full": "Washington, D.C.",
+            "ap": "D.C.",
+            "x": 648,
+            "y": 360,
+            "w": 66,
+            "h": 66
+        },
         "DE": {
             "abbr": "DE",
             "full": "Delaware",
@@ -510,15 +511,15 @@ d3.squareMap = {
             "w": 100,
             "h": 20
         },
-        "legend": {
-            "abbr": "Firearms per 1,000 people",
-            "full": "Firearms per 1,000 people",
-            "ap": "Firearms per 1,000 people",
-            "x": 681,
-            "y": 370.5,
-            "w": 100,
-            "h": 20
-        }
+        // "legend": {
+        //     "abbr": "Firearms per 1,000 people",
+        //     "full": "Firearms per 1,000 people",
+        //     "ap": "Firearms per 1,000 people",
+        //     "x": 681,
+        //     "y": 370.5,
+        //     "w": 100,
+        //     "h": 20
+        // }
     },
     // Called by the user to render the squareMap
     render: function(data, selector) { // Takes the location of the data CSV and the container element
@@ -590,6 +591,8 @@ d3.squareMap = {
             if (this.labels) {
                 this.addLabels(this.svg); // Call addLabels() on the SVG
             }
+
+            this.addTitle(this.svg);
     },
     // Generate the state labels
     addLabels: function(svg) {
@@ -612,6 +615,13 @@ d3.squareMap = {
                 .style('font-family', d3.squareMap.labelTypeface); // Set the label font
         });
     },
+    addTitle: function(svg) {
+        svg.append('text').text(this.heading)
+        .attr('x', this.width/2)
+        .attr('y', 33)
+        .attr('text-anchor', 'middle');
+        .attr('alignment-baseline', 'middle');
+    }
     // Setter method to allow the user to set properties. Takes an object of properties as its argument.
     setAttr: function(attr) {
 
@@ -637,6 +647,7 @@ d3.squareMap = {
             number = this.colorNumber;
         // Set the range
         this.scale.range(colorbrewer[palette][number]);
+        console.log(colorbrewer[palette][number]);
     },
     // Method to update the scale domain
     // updateScaleDomain: function() {

@@ -3,6 +3,7 @@ Guns per capita:
 http://reverbpress.com/politics/firearms-per-capita-by-state/
 Gun death per capita:
 https://www.cdc.gov/nchs/pressroom/sosmap/firearm_mortality/firearm.htm
+https://www.kff.org/other/state-indicator/firearms-death-rate-per-100000/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D
 Mother Jones mass shootings tracker:
 http://www.motherjones.com/politics/2012/12/mass-shootings-mother-jones-full-data/
 FBI 2013 study:
