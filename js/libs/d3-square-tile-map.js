@@ -13,7 +13,7 @@ d3.squareMap = {
     data: [], // Will contain our data for later analysis
     scale: d3.scaleThreshold().domain([10,20,100]), // An empty d3 quantize scale to make our choropleth
     legend: null,
-    heading: "Firearms per 1,000 people",
+    heading: "Firearms per 1,000 People",
     // This is the 'geographic' and label data for the states
     states: {
         "AK": { // Which state
@@ -510,16 +510,7 @@ d3.squareMap = {
             "y": 460.5,
             "w": 100,
             "h": 20
-        },
-        // "legend": {
-        //     "abbr": "Firearms per 1,000 people",
-        //     "full": "Firearms per 1,000 people",
-        //     "ap": "Firearms per 1,000 people",
-        //     "x": 681,
-        //     "y": 370.5,
-        //     "w": 100,
-        //     "h": 20
-        // }
+        }
     },
     // Called by the user to render the squareMap
     render: function(data, selector) { // Takes the location of the data CSV and the container element
@@ -619,8 +610,8 @@ d3.squareMap = {
         svg.append('text').text(this.heading)
         .attr('x', this.width/2)
         .attr('y', 33)
-        .attr('text-anchor', 'middle');
-        // .attr('alignment-baseline', 'middle');
+        .attr('text-anchor', 'middle')
+        .attr('alignment-baseline', 'middle');
     }
     // Setter method to allow the user to set properties. Takes an object of properties as its argument.
     setAttr: function(attr) {
