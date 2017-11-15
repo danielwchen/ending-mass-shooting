@@ -478,7 +478,7 @@ d3.squareMap = {
             "abbr": ">100",
             "full": "Wyoming",
             "ap": "Wyo.",
-            "x": 681,
+            "x": 720,
             "y": 393,
             "w": 100,
             "h": 20
@@ -487,7 +487,7 @@ d3.squareMap = {
             "abbr": "20-100",
             "full": "Wyoming",
             "ap": "Wyo.",
-            "x": 681,
+            "x": 720,
             "y": 415.5,
             "w": 100,
             "h": 20
@@ -496,7 +496,7 @@ d3.squareMap = {
             "abbr": "10-20",
             "full": "Wyoming",
             "ap": "Wyo.",
-            "x": 681,
+            "x": 720,
             "y": 438,
             "w": 100,
             "h": 20
@@ -505,7 +505,7 @@ d3.squareMap = {
             "abbr": "<10",
             "full": "Wyoming",
             "ap": "Wyo.",
-            "x": 681,
+            "x": 720,
             "y": 460.5,
             "w": 100,
             "h": 20
