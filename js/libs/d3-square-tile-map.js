@@ -12,6 +12,7 @@ d3.squareMap = {
     labelColor: 'white', // Color of labels
     data: [], // Will contain our data for later analysis
     scale: d3.scaleQuantize(), // An empty d3 quantize scale to make our choropleth
+    legend: null,
     // This is the 'geographic' and label data for the states
     states: {
         "AK": { // Which state
@@ -506,6 +507,15 @@ d3.squareMap = {
             "ap": "Wyo.",
             "x": 681,
             "y": 460.5,
+            "w": 66,
+            "h": 20
+        },
+        "legend": {
+            "abbr": "Firearms per 1,000 people",
+            "full": "Firearms per 1,000 people",
+            "ap": "Firearms per 1,000 people",
+            "x": 681,
+            "y": 370.5,
             "w": 66,
             "h": 20
         }
