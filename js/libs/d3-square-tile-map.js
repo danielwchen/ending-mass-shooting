@@ -471,6 +471,42 @@ d3.squareMap = {
             "y": 216,
             "w": 66,
             "h": 66
+        },
+        "1": {
+            "abbr": "1",
+            "full": "Wyoming",
+            "ap": "Wyo.",
+            "x": 681,
+            "y": 393,
+            "w": 33,
+            "h": 16.5
+        },
+        "2": {
+            "abbr": "2",
+            "full": "Wyoming",
+            "ap": "Wyo.",
+            "x": 681,
+            "y": 415.5,
+            "w": 66,
+            "h": 16.5
+        },
+        "3": {
+            "abbr": "3",
+            "full": "Wyoming",
+            "ap": "Wyo.",
+            "x": 681,
+            "y": 438,
+            "w": 66,
+            "h": 16.5
+        },
+        "4": {
+            "abbr": "4",
+            "full": "Wyoming",
+            "ap": "Wyo.",
+            "x": 681,
+            "y": 460.5,
+            "w": 66,
+            "h": 16.5
         }
     },
     // Called by the user to render the map
@@ -519,10 +555,11 @@ d3.squareMap = {
             .attr('viewBox', '0 0 858.8 570'); // Needed to make the map scale to the SVG size
 
         // Append the SVG rect for each state to the SVG canvas
-        this.map = this.svg.selectAll('rect')
+        this.map = this.svg.selectAll('.state')
             .data(d3.values(this.states)) // Bind the user's data
             .enter()
             .append('rect') // Create the rect
+            .attr('class', 'state')
             .attr('width', function(d) {
                 return d.w; // Set width dynamically
             })
@@ -542,6 +579,10 @@ d3.squareMap = {
             if (this.labels) {
                 this.addLabels(this.svg); // Call addLabels() on the SVG
             }
+
+            // if (this.legend) {
+            //     this.addLegend(this.svg);
+            // }
     },
     // Generate the state labels
     addLabels: function(svg) {
@@ -564,6 +605,53 @@ d3.squareMap = {
                 .style('font-family', d3.squareMap.labelTypeface); // Set the label font
         });
     },
+    // addLegend: function(svg) {
+
+
+        
+    //     this.legend = svg.selectAll('.legend')
+    //         .data(d3.values(this.states)) // Bind the user's data
+    //         .enter()
+    //         .append('rect') // Create the rect
+    //         .attr('class', 'legend')
+    //         .attr('width', function(d) {
+    //             return d.w/2; // Set width dynamically
+    //         })
+    //         .attr('height', function(d) {
+    //             return d.h/4; // Set height dynamically
+    //         })
+    //         .attr('x', function(d) {
+    //             return d.x; // Set x dynamically
+    //         })
+    //         .attr('y', function(d) {
+    //             return d.y; // Set y dynamically
+    //         }).attr('fill', function(d) {
+    //             return d3.squareMap.scale(d.stateData); // Set the colors of each state using our data and scale
+    //         });
+
+
+    //     vis.legend_rect1 = vis.svg.selectAll(".legend-rect1")
+    //     .data(vis.c_domain.type)
+    //     .enter().append("rect")
+    //     .attr("class", "legend-rect1 legend-rect")
+    //     .attr("x", vis.width + 36)
+    //     .attr("y", function(d,i) { return i*20; })
+    //     .attr("width", 18)
+    //     .attr("height", 18)
+    //     .style("fill", function(d,i) {
+    //       return vis.c_range.type[i];
+    //     });
+
+    //     vis.legend_text1 = vis.svg.selectAll(".legend-text1")
+    //     .data(vis.c_domain.type)
+    //     .enter().append("text")
+    //     .attr("class", "legend-text1 legend-text")
+    //     .attr("x", vis.width + 28)
+    //     .attr("y", function(d,i) {return i*20+9; })
+    //     .attr("dy", ".35em")
+    //     .style("text-anchor", "end")
+    //     .text(function(d) { return d;});
+    // }
     // Setter method to allow the user to set properties. Takes an object of properties as its argument.
     setAttr: function(attr) {
 
