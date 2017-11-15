@@ -612,7 +612,7 @@ d3.squareMap = {
         .attr('y', 33)
         .attr('text-anchor', 'middle')
         .attr('alignment-baseline', 'middle');
-    }
+    },
     // Setter method to allow the user to set properties. Takes an object of properties as its argument.
     setAttr: function(attr) {
 
