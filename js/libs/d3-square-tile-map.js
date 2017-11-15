@@ -13,7 +13,7 @@ d3.squareMap = {
     data: [], // Will contain our data for later analysis
     scale: d3.scaleThreshold().domain([10,20,100]), // An empty d3 quantize scale to make our choropleth
     legend: null,
-    heading: "Firearms per 1,000 people"
+    heading: "Firearms per 1,000 people",
     // This is the 'geographic' and label data for the states
     states: {
         "AK": { // Which state
