@@ -473,7 +473,7 @@ d3.squareMap = {
             "h": 66
         },
         "1": {
-            "abbr": "1",
+            "abbr": ">100",
             "full": "Wyoming",
             "ap": "Wyo.",
             "x": 681,
@@ -482,7 +482,7 @@ d3.squareMap = {
             "h": 16.5
         },
         "2": {
-            "abbr": "2",
+            "abbr": "20-100",
             "full": "Wyoming",
             "ap": "Wyo.",
             "x": 681,
@@ -491,7 +491,7 @@ d3.squareMap = {
             "h": 16.5
         },
         "3": {
-            "abbr": "3",
+            "abbr": "10-20",
             "full": "Wyoming",
             "ap": "Wyo.",
             "x": 681,
@@ -500,7 +500,7 @@ d3.squareMap = {
             "h": 16.5
         },
         "4": {
-            "abbr": "4",
+            "abbr": "0-10",
             "full": "Wyoming",
             "ap": "Wyo.",
             "x": 681,
@@ -509,7 +509,7 @@ d3.squareMap = {
             "h": 16.5
         }
     },
-    // Called by the user to render the map
+    // Called by the user to render the squareMap
     render: function(data, selector) { // Takes the location of the data CSV and the container element
         // Parse the data
         d3.csv(data, function(d) {
