@@ -619,8 +619,8 @@ d3.squareMap = {
         svg.append('text').text(this.heading)
         .attr('x', this.width/2)
         .attr('y', 33)
-        .attr('text-anchor', 'middle')
-        .attr('alignment-baseline', 'middle');
+        .attr('text-anchor', 'middle');
+        // .attr('alignment-baseline', 'middle');
     }
     // Setter method to allow the user to set properties. Takes an object of properties as its argument.
     setAttr: function(attr) {
