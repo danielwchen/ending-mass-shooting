@@ -9,13 +9,43 @@
   <meta name="author" content="Daniel W. Chen">
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/theme.css">
 
 </head>
 
 <body>
-  <div id="vis1"></div>
-  <div id="vis2"></div>
+  <header>
+    <h1>How Mass Shootings End</h1>
+  </header>
+
+  <div class='container'>
+    <p>1
+    </p>
+    <p>2
+    </p>
+    <div id="map-container">
+      <div class="col-sm-6" id="vis1"></div>
+      <div class="col-sm-6" id="vis2"></div>
+      <br>
+      <!--<div id="vis3"></div>-->
+    </div>
+  </div>
+  <footer>
+    <div id='references'>
+      <div class='container footer'>
+        <p>
+          Data References
+        </p>
+        <p>
+          Guns per capita by state: http://reverbpress.com/politics/firearms-per-capita-by-state/
+        </p>
+        <p>
+          Gun deaths per capita by state : https://www.kff.org/other/state-indicator/firearms-death-rate-per-100000/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D
+        </p>
+      </div>
+    </div>
+  </footer>
 
 
 
@@ -25,9 +55,12 @@
   <script src="js/libs/d3.min.js"></script>
   <script src="js/libs/d3v4.tip.js"></script>
   <script src="js/libs/graph-scroll.js"></script>
-  <script src="js/libs/d3-square-tile-map.js"></script>
   <script src="js/libs/colorbrewer.min.js"></script>
 
+  
+  <script src="js/libs/d3-square-tile-map.js"></script>
+  <script src="js/libs/d3-square-tile-map2.js"></script>
+  <script src="js/scatter.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

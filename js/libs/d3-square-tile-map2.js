@@ -479,7 +479,7 @@ d3.squareMap2 = {
             "abbr": ">18",
             "full": ">18",
             "ap": ">18",
-            "x": 720,
+            "x": 758.8,
             "y": 393,
             "w": 100,
             "h": 20
@@ -488,7 +488,7 @@ d3.squareMap2 = {
             "abbr": "14-18",
             "full": "14-18",
             "ap": "14-18",
-            "x": 720,
+            "x": 758.8,
             "y": 415.5,
             "w": 100,
             "h": 20
@@ -497,7 +497,7 @@ d3.squareMap2 = {
             "abbr": "10-14",
             "full": "10-14",
             "ap": "10-14",
-            "x": 720,
+            "x": 758.8,
             "y": 438,
             "w": 100,
             "h": 20
@@ -506,7 +506,7 @@ d3.squareMap2 = {
             "abbr": "<10",
             "full": "<10",
             "ap": "<10",
-            "x": 720,
+            "x": 758.8,
             "y": 460.5,
             "w": 100,
             "h": 20
@@ -517,22 +517,22 @@ d3.squareMap2 = {
         // Parse the data
         d3.csv(data, function(d) {
             // Loop through states data (this.states)
-            for (var key in d3.squareMap.states) {
+            for (var key in d3.squareMap2.states) {
                 // Loop through the user data (d)
                 for (var j = 0; j < d.length; j++) {
                     // Check if the current selection in the states object matches the current selection in the data object
                     if (key == d[j].state) {
                         // If it does, set that state's stateData property to the data
                         // The data from here will be used in tooltips and such
-                        d3.squareMap.states[key].stateData = d[j].data;
+                        d3.squareMap2.states[key].stateData = d[j].data;
                         // Also add the data to the data array. This will be used to calculate min and max for the scale
-                        d3.squareMap.data.push(+d[j].data);
+                        d3.squareMap2.data.push(+d[j].data);
                     }
                 }
             }
 
             // Once the data is done parsing, actually draw the map
-            d3.squareMap.draw(selector);
+            d3.squareMap2.draw(selector);
         });
     },
     draw: function(selector) {
@@ -575,7 +575,7 @@ d3.squareMap2 = {
             .attr('y', function(d) {
                 return d.y; // Set y dynamically
             }).attr('fill', function(d) {
-                return d3.squareMap.scale(d.stateData); // Set the colors of each state using our data and scale
+                return d3.squareMap2.scale(d.stateData); // Set the colors of each state using our data and scale
             });
 
             // If the user wants labels, generate them
@@ -596,24 +596,22 @@ d3.squareMap2 = {
 
             // Append a text element to the SVG
             svg.append('text')
-                .text(d[d3.squareMap.labelStyle]) // Set the text based on the state and the user's style choice
+                .text(d[d3.squareMap2.labelStyle]) // Set the text based on the state and the user's style choice
                 .attr('x', box.x + (box.width/2)) // Set the x position based on the bounding box
                 .attr('y', box.y + (box.height/2)) // Set the y position based on the bounding box
                 .attr('class', 'state-label') // Label the state
                 .attr('text-anchor', 'middle') // Center the text horizontally
                 .attr('alignment-baseline', 'middle') // Center the text vertically
-                .style('fill', d3.squareMap.labelColor) // Color the labels
-                .style('font-family', d3.squareMap.labelTypeface); // Set the label font
+                .style('fill', d3.squareMap2.labelColor) // Color the labels
+                .style('font-family', d3.squareMap2.labelTypeface); // Set the label font
         });
     },
     addTitle: function(svg) {
         svg.append('text')
         .text(this.heading)
         .attr('class', 'maptitle')
-        .attr('x', this.width/2)
-        .attr('y', 33)
-        .attr('text-anchor', 'middle')
-        .attr('alignment-baseline', 'middle');
+        .attr('x', 0)
+        .attr('y', 33);
     },
     // Setter method to allow the user to set properties. Takes an object of properties as its argument.
     setAttr: function(attr) {

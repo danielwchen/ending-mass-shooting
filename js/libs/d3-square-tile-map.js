@@ -479,7 +479,7 @@ d3.squareMap = {
             "abbr": ">100",
             "full": "Wyoming",
             "ap": "Wyo.",
-            "x": 720,
+            "x": 758.8,
             "y": 393,
             "w": 100,
             "h": 20
@@ -488,7 +488,7 @@ d3.squareMap = {
             "abbr": "20-100",
             "full": "Wyoming",
             "ap": "Wyo.",
-            "x": 720,
+            "x": 758.8,
             "y": 415.5,
             "w": 100,
             "h": 20
@@ -497,7 +497,7 @@ d3.squareMap = {
             "abbr": "10-20",
             "full": "Wyoming",
             "ap": "Wyo.",
-            "x": 720,
+            "x": 758.8,
             "y": 438,
             "w": 100,
             "h": 20
@@ -506,7 +506,7 @@ d3.squareMap = {
             "abbr": "<10",
             "full": "Wyoming",
             "ap": "Wyo.",
-            "x": 720,
+            "x": 758.8,
             "y": 460.5,
             "w": 100,
             "h": 20
@@ -610,10 +610,8 @@ d3.squareMap = {
         svg.append('text')
         .text(this.heading)
         .attr('class', 'maptitle')
-        .attr('x', this.width/2)
-        .attr('y', 33)
-        .attr('text-anchor', 'middle')
-        .attr('alignment-baseline', 'middle');
+        .attr('x', 0)
+        .attr('y', 33);
     },
     // Setter method to allow the user to set properties. Takes an object of properties as its argument.
     setAttr: function(attr) {
@@ -640,7 +638,6 @@ d3.squareMap = {
             number = this.colorNumber;
         // Set the range
         this.scale.range(colorbrewer[palette][number]);
-        console.log(colorbrewer[palette][number]);
     },
     // Method to update the scale domain
     // updateScaleDomain: function() {
