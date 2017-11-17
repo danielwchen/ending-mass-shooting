@@ -1,3 +1,10 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -18,15 +25,13 @@ footer {
 }
 
 #map-container {
-    /*height: 200px;*/
-    /*margin: auto;*/
-    /*padding: 10px;*/
+
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
 }
 
 #vis1 {
-    min-height: 100px;
-    
-}
-#vis2 {
-    min-height: 100px;
+  float: left;
+  min-height: 100px;
 }

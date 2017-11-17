@@ -120,7 +120,7 @@ Scatter.prototype.createVis = function() {
   
   vis.dots.append("circle")
   .attr("class", "dots")
-  .attr("r", 3)
+  .attr("r", 5)
   .attr("cx", function(d) { return vis.x(d.firearms); })
   .attr("cy", function(d) { return vis.y(d.deaths); })
   .attr("fill", vis.colors[2])
