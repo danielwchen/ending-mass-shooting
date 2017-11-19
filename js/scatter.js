@@ -70,7 +70,7 @@ Scatter.prototype.createVis = function() {
   .style('z-index', '999999999')
   .html(function(d) {
     return "<text id=\"tip-title\">" + d.state + "</text>" + "<br>" + "Firearms: " + d.firearms + "/1,000<br>" 
-    + "Gun Deaths: " + d.deaths; 
+    + "Gun Deaths: " + d.deaths + "/100,000"; 
   });
 
   vis.svg.call(vis.tip);
@@ -120,7 +120,7 @@ Scatter.prototype.createVis = function() {
   
   vis.dots.append("circle")
   .attr("class", "dots")
-  .attr("r", 5)
+  .attr("r", 8)
   .attr("cx", function(d) { return vis.x(d.firearms); })
   .attr("cy", function(d) { return vis.y(d.deaths); })
   .attr("fill", vis.colors[2])
