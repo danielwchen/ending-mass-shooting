@@ -12,7 +12,7 @@
   this.winHeight = this.winWidth*0.5;
 
 
-  this.fin_data = [{label: "Shooter chose to end", num:90}, {label: "Stopped by ", num:70}];
+  this.fin_data = [{label: "Before Police", num:65}, {label: "After Police", num:95}];
 
   this.colors = colorbrewer["Reds"][4];
 
@@ -38,7 +38,7 @@ Pie.prototype.createVis = function() {
   vis.svg = d3.select(vis.parentElement).append("svg")
   .attr('width', '100%')
   // .attr('viewBox', '0 0 ' + size + ' ' + size);
-  .attr("viewBox", '0 0 858.8 570');
+  .attr("viewBox", '0 0 900 300');
   // .attr("preserveAspectRatio", "xMinYMin meet");
 
   vis.g = vis.svg.append("g")
@@ -72,36 +72,36 @@ Pie.prototype.createVis = function() {
 
   vis.arc.append("text")
   .attr("transform", function(d) { return "translate(" + vis.labelArc.centroid(d) + ")"; })
-  .attr("dy", "-2em")
-  .attr("dx", "-.5em")
+  .attr("dy", "-0.5em")
+  .attr("dx", "-0.2em")
   .text(function(d,i) {
     if (i==0) {
-      return "56%";
+      return "40%";
     } else { return ""; }
   })
   .attr("class", "pie-percent");
 
   vis.arc.append("text")
   .attr("transform", function(d) { return "translate(" + vis.labelArc.centroid(d) + ")"; })
-  .attr("dy", "-7em")
-  .attr("dx", "-1em")
+  .attr("dy", "0em")
+  .attr("dx", "1em")
   .text(function(d,i) {
     if (i==0) {
-      return "of the shooting incidents analyzed ended at";
+      return "of analyzed shooting incidents ended";
     } else { return ""; }
   })
   .attr("class", "pie-label");
 
   vis.arc.append("text")
   .attr("transform", function(d) { return "translate(" + vis.labelArc.centroid(d) + ")"; })
-  .attr("dy", "-2.2em")
-  .attr("dx", "0em")
+  .attr("dy", "1.3em")
+  .attr("dx", "1.5em")
   .text(function(d,i) {
     if (i==0) {
-      return "the shooter's initiative.";
+      return "before police arrival.";
     } else { return ""; }
   })
-  .attr("class", "pie-label-emp");
+  .attr("class", "pie-label");
 
    
 

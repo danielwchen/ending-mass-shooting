@@ -159,34 +159,3 @@ Scatter.prototype.updateVis = function() {
 
 
 }
-
-//Scatter.prototype.resize = function(w, h) {
-//  var vis = this;
-//
-//  vis.winWidth = w;
-//  vis.winHeight = h;
-//
-//  vis.width = vis.winWidth - vis.margin.left - vis.margin.right;
-//  vis.height = vis.winHeight - vis.margin.top - vis.margin.bottom - 40;
-//
-//  vis.svgparent
-//  .attr("width", vis.width + vis.margin.left + vis.margin.right)
-//  .attr("height", vis.height + vis.margin.top + vis.margin.bottom);
-//
-//  vis.x.range([0, vis.width]);
-//  vis.y.range([vis.height, 0]);
-//
-//  vis.xAxis
-//  .attr("transform", "translate(0," + vis.height + ")")
-//
-//  vis.xLabel
-//  .attr("x", vis.width)
-//  .attr("y", vis.height-6);
-//
-//  vis.yLabel
-//  .attr("y", 6)
-//  .attr("dy", ".71em");
-//
-//  vis.updateVis();
-//
-//}

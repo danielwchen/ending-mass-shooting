@@ -106,6 +106,14 @@ footer {
   font-weight: bolder;
 }
 
-.pie-label-emp {
-  font-size: 30px;
+.pie-label {
+  font-size: 16px;
+}
+
+.tick text {
+  font-size: 16px;
+}
+
+.bar-label {
+  font-size: 16px;
 }
