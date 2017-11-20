@@ -553,8 +553,8 @@ d3.squareMap = {
         // Append an SVG to the container element, based on the user's set properties
         this.svg = d3.select(selector)
             .append('svg')
-            .attr('width', this.width)
-            .attr('height', this.height)
+            .attr('width', "100%")
+            // .attr('height', this.height)
             .attr('viewBox', '0 0 858.8 570'); // Needed to make the map scale to the SVG size
 
         // Append the SVG rect for each state to the SVG canvas

@@ -96,6 +96,16 @@ footer {
   background-color: red;
 }
 
-.col-sm-6 {
-  padding: 0;
+.arc path {
+  stroke: #fff;
+  stroke-width: 5px;
+}
+
+.pie-percent {
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+.pie-label-emp {
+  font-size: 30px;
 }

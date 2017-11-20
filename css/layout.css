@@ -25,13 +25,11 @@ footer {
 }
 
 #map-container {
-
   height: 100%;
   margin: auto;
   overflow: hidden;
 }
 
 #vis1, #vis2 {
-  float: left;
   min-height: 100px;
 }
