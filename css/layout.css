@@ -32,4 +32,6 @@ footer {
 
 #vis1, #vis2 {
   min-height: 100px;
+  max-width: 640px;
+  margin: 0 auto;
 }

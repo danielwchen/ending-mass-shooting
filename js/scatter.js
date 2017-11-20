@@ -78,14 +78,6 @@ Scatter.prototype.createVis = function() {
   vis.x = d3.scaleLog().range([0, vis.width]);
   vis.y = d3.scaleLinear().range([vis.height, 0]);
 
-//  vis.x.domain([0, d3.max(vis.fin_data, function(d) { 
-//    return d.firearms;
-//  })]);
-//
-//  vis.y.domain([0, d3.max(vis.fin_data, function(d) { 
-//    return d.deaths;
-//  })]);
-
   vis.x.domain([1,200]);
   vis.y.domain([0,25]);
 
@@ -95,7 +87,6 @@ Scatter.prototype.createVis = function() {
 
   vis.yAxis = vis.svg.append("g")
   .call(d3.axisLeft(vis.y).tickSizeInner(-vis.width).tickPadding(10).ticks(4	));
-
 
   vis.xLabel = vis.svg
   .append("text")
