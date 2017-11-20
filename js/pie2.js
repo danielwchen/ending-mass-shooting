@@ -87,7 +87,7 @@ Pie2.prototype.createVis = function() {
   .attr("dx", "0em")
   .text(function(d,i) {
     if (i==0) {
-      return "of the shooting incidents analyzed ended at";
+      return "of analyzed shootings ended";
     } else { return ""; }
   })
   .attr("class", "pie-label");
@@ -98,7 +98,7 @@ Pie2.prototype.createVis = function() {
   .attr("dx", "1em")
   .text(function(d,i) {
     if (i==0) {
-      return "the shooter's initiative.";
+      return "at the shooter's initiative.";
     } else { return ""; }
   })
   .attr("class", "pie-label");

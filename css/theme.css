@@ -1,3 +1,11 @@
+/*
+  7E0206
+  CB181D
+  D4D12E
+  036198
+  09537E
+*/
+
 body {
   background-color: #fb6a4a;
   font-family: Helvetica;
@@ -89,11 +97,9 @@ footer {
 }
 
 #vis1 {
-  background-color: blue;
 }
 
 #vis2 {
-  background-color: red;
 }
 
 .arc path {
@@ -104,6 +110,7 @@ footer {
 .pie-percent {
   font-size: 60px;
   font-weight: bolder;
+  color: #09537E;
 }
 
 .pie-label {
