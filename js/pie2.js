@@ -72,8 +72,8 @@ Pie2.prototype.createVis = function() {
 
   vis.arc.append("text")
   .attr("transform", function(d) { return "translate(" + vis.labelArc.centroid(d) + ")"; })
-  .attr("dy", "-2em")
-  .attr("dx", "-.5em")
+  .attr("dy", "-1.5em")
+  .attr("dx", "0em")
   .text(function(d,i) {
     if (i==0) {
       return "56%";
@@ -83,8 +83,8 @@ Pie2.prototype.createVis = function() {
 
   vis.arc.append("text")
   .attr("transform", function(d) { return "translate(" + vis.labelArc.centroid(d) + ")"; })
-  .attr("dy", "-6em")
-  .attr("dx", "0em")
+  .attr("dy", "-4em")
+  .attr("dx", "1em")
   .text(function(d,i) {
     if (i==0) {
       return "of analyzed shootings ended";
@@ -94,8 +94,8 @@ Pie2.prototype.createVis = function() {
 
   vis.arc.append("text")
   .attr("transform", function(d) { return "translate(" + vis.labelArc.centroid(d) + ")"; })
-  .attr("dy", "-4.7em")
-  .attr("dx", "1em")
+  .attr("dy", "-2.7em")
+  .attr("dx", "2em")
   .text(function(d,i) {
     if (i==0) {
       return "at the shooter's initiative.";
