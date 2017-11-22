@@ -36,6 +36,15 @@ p {
   background-color: white;
 }
 
+.container > p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container > p:first-of-type {
+  padding-top: 20px;
+}
+
 .footer {
   background-color: transparent;
   font-size: xx-small;
@@ -45,6 +54,10 @@ p {
 .footer > p {
   color: #323232;
   margin-bottom: 0;
+}
+
+.twitter-tweet {
+  margin: auto;
 }
 
 .maptitle {
