@@ -28,6 +28,10 @@ footer {
   color: black;
 }
 
+p {
+  font-size: 16px;
+}
+
 .container {
   background-color: white;
 }

@@ -14,7 +14,7 @@
     {resolution:"Armed off-duty police officers", num:2},
   ];
 
-  this.height = 300;
+  this.height = 200;
 
   this.initVis();
 };
@@ -44,7 +44,7 @@ Bar.prototype.createVis = function() {
 
   vis.svg = d3.select(vis.parentElement).append('svg')
   .attr('width', '100%')
-  .attr("viewBox", '0 0 800 340');
+  .attr("viewBox", '0 0 800 240');
 
   vis.svg.append("g")
   .attr("class", "x axis")
