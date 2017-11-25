@@ -13,6 +13,9 @@ body {
 
 header {
   background-color: #cb181d;
+  background-image: url("../img/bullets.svg");
+  background-position: center center;
+  background-size: cover;
   margin: 0;
 }
 
