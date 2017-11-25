@@ -39,3 +39,8 @@ footer {
   max-width: 640px;
   margin: 0 auto;
 }
+
+.vis {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
